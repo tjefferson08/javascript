@@ -263,8 +263,8 @@
   - Function expressions:
 
     ```javascript
-    // anonymous function expression
-    var anonymous = function() {
+    // anonymous function expression - note the space between the function keyword and the param list
+    var anonymous = function () {
       return true;
     };
 
