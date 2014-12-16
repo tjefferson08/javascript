@@ -1092,7 +1092,7 @@
     this._firstName = 'Panda';
     ```
 
-  - When saving a reference to `this` use `_this`.
+  - When saving a reference to `this` use `self`.
 
     ```javascript
     // bad
