@@ -69,12 +69,12 @@
    */
 
   // Suppress warnings about == null comparisons.
-  "eqnull": true
+  "eqnull": true,
 
   // Suppress warnings about using [] notation
   "sub": true,
 
   // Require capitalized names for constructor functions.
-  "newcap": false,
+  "newcap": false
 
 }
