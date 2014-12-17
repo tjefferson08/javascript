@@ -13,19 +13,18 @@
   // Define globals exposed by Node.js.
   "node": true,
 
+  // Define globals exposed by CouchDB.
+  "couch": true,
+
   /*
    * ENFORCING OPTIONS
    * =================
    */
 
-  // Force all variable names to use either camelCase style or UPPER_CASE
-  // with underscores.
-  "camelcase": true,
-
   // Prohibit use of == and != in favor of === and !==.
   "eqeqeq": true,
 
-  // Enforce tab width of 2 spaces.
+  // Enforce tab width of 4 spaces. -- NOTE: This is no longer enforced by JSHint!
   "indent": 4,
 
   // Prohibit use of a variable before it is defined.
@@ -49,6 +48,24 @@
   // Warn when variables are defined but never used.
   "unused": true,
 
+  // Warn about using bitwise operators
+  "bitwise": true,
+
+  // Warn when blocks omit {}
+  "curly": true,
+
+  // Warn about unsafe for..in
+  "forin": true,
+
+  // Warn about overwriting prototypes of native objects
+  "freeze": true,
+
+  // Warn about arguments.caller and arguments.callee
+  "noarg": true,
+
+  // Warn about non-breaking whitespace characters
+  "nonbsp": true,
+
   /*
    * RELAXING OPTIONS
    * =================
@@ -56,4 +73,8 @@
 
   // Suppress warnings about == null comparisons.
   "eqnull": true
+
+  // Suppress warnings about using [] notation
+  "sub": true,
+
 }
