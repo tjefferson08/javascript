@@ -33,9 +33,6 @@
   // Enforce line length to 120 characters
   "maxlen": 120,
 
-  // Require capitalized names for constructor functions.
-  "newcap": true,
-
   // Enforce use of single quotation marks for strings.
   "quotmark": "single",
 
@@ -76,5 +73,8 @@
 
   // Suppress warnings about using [] notation
   "sub": true,
+
+  // Require capitalized names for constructor functions.
+  "newcap": false,
 
 }
