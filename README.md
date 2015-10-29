@@ -26,6 +26,7 @@
   1. [Events](#events)
   1. [Modules](#modules)
   1. [jQuery](#jquery)
+  1. [Promises](#promises)
   1. [ECMAScript 5 Compatibility](#ecmascript-5-compatibility)
   1. [Testing](#testing)
   1. [Performance](#performance)
@@ -367,7 +368,7 @@
   - Use one `var` declaration per variable.
     It's easier to add new variable declarations this way, and you never have
     to worry about swapping out a `;` for a `,` or introducing punctuation-only
-    diffs. 
+    diffs.
 
     ```javascript
     // bad
@@ -745,7 +746,7 @@
     function() {
     ∙∙var name;
     }
-    
+
     // good
     function() {
     ∙∙∙∙var name;
@@ -1393,6 +1394,55 @@
 
 **[⬆ back to top](#table-of-contents)**
 
+## Promises
+  - Always declare a rejection/fulfillment handler on its own line
+
+  ```javascript
+  // bad
+  .then(function () {
+      // code
+  })
+
+  // good
+  .then(
+      function () {
+          // code
+      }
+  )
+  ```
+
+  - Never hang a `.then(` off of a right paren, start it on a new line instead
+
+  ```javascript
+  // bad
+  foo({
+      many: 'fields',
+      large: 'object'
+  }).then(
+
+  // good
+  foo({
+      many: 'fields',
+      large: 'object'
+  })
+  .then(
+  ```
+
+  - Align argument lists which span multiple lines
+
+  ```javascript
+  // bad
+  someFunctionWithManyArgs(one, two, three,
+      four, five)
+  .then(
+
+  // good
+  someFunctionWithManyArgs(one, two, three,
+                           four, five)
+  .then(
+  ```
+
+**[⬆ back to top](#table-of-contents)**
 
 ## ECMAScript 5 Compatibility
 
